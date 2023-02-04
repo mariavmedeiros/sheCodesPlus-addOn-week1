@@ -11,13 +11,13 @@
 
 function showSelectedCity(event) {
   if (event.target.value === "saopaulo") {
-    alert(`your current time zone is ${brazilTime}`);
+    alert("oi");
   }
   if (event.target.value === "sanfrancisco") {
-    alert(`your current time zone is ${usaTime}`);
+    alert("hi");
   }
   if (event.target.value === "rome") {
-    alert(`your current time zone is ${italyTime}`);
+    alert("ciao");
   }
 }
 
