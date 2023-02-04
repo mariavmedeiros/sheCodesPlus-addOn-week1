@@ -1,17 +1,23 @@
+let brazilTime = moment()
+  .tz("America/Sao_Paulo")
+  .format("dddd, MMMM D, YYYY, H:M a");
+let usaTime = moment()
+  .tz("America/Los_Angeles")
+  .format("dddd, MMMM D, YYYY, H:m A");
+
+let italyTime = moment().tz("Europe/Rome").format("dddd, MMMM D, YYYY, H:m A)");
+
 function showSelectedCity(event) {
   if (event.target.value === "saopaulo") {
-    alert("oi");
+    alert(`your current time zone is ${brazilTime}`);
   }
   if (event.target.value === "sanfrancisco") {
-    alert("hi");
+    alert(`your current time zone is ${usaTime}`);
   }
-  if (event.target.value === "milano") {
-    alert("ciao");
+  if (event.target.value === "rome") {
+    alert(`your current time zone is ${italyTime}`);
   }
 }
 
 let citySelect = document.querySelector("#cities");
 citySelect.addEventListener("change", showSelectedCity);
-
-//let brazilTime = moment().tz("Brazil/East").format("dddd, MMMM D, YYYY, H:M a");
-//let brazilElement = document.querySelector("#brazil");
