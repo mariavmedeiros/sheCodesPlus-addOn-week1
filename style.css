@@ -13,3 +13,12 @@ select {
   padding: 8px;
   margin: 18px;
 }
+
+footer {
+  text-align: center;
+  font-size: 18px;
+}
+
+a {
+  color: rgb(145, 144, 148);
+}
